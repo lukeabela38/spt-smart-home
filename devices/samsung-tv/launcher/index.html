@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101d2d">
+  <title>Launcher</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="cinema.css">
+</head>
+<body>
+  <div id="stage">
+    <div id="art" aria-hidden="true"><div class="wp"></div><div class="wp"></div></div>
+    <div id="scrim" aria-hidden="true"></div>
+    <h1 id="home-title">Home</h1>
+
+    <header id="clock" class="pill">
+      <span id="wx"></span><span class="sep"></span><span id="date"></span><span class="sep"></span><span id="time"></span>
+    </header>
+
+    <main id="home" aria-label="Streaming apps">
+      <div id="selection"><h2 id="selected-title"></h2><p>Press OK to open</p></div>
+      <div id="dock">
+        <div class="platter" aria-hidden="true"><canvas class="frost"></canvas><canvas class="frost"></canvas><span class="tint"></span></div>
+        <ul id="row" role="listbox" aria-label="Choose an app" tabindex="0"></ul>
+      </div>
+      <p id="remote-hint">Back twice for Samsung Home <span aria-hidden="true">/</span> Channel + / − to change the background</p>
+    </main>
+
+    <div id="toast" class="pill" role="status" aria-live="polite"></div>
+    <div id="veil" aria-hidden="true"></div>
+  </div>
+
+  <!-- optional files: missing ones are simply skipped -->
+  <script src="wallpapers/list.js"></script>
+  <script src="config.js"></script>
+  <script src="config.local.js"></script>
+  <script src="art.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

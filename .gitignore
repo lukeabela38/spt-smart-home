@@ -1,0 +1,22 @@
+# Credentials and local settings
+.env
+.env.*
+!.env.example
+*.p12
+*.pem
+*.key
+*.pfx
+*.crt
+*.csr
+*.pri
+author.*
+distributor.*
+tv.json
+tv-token.json
+config.local.js
+
+# Generated files
+node_modules/
+build/
+*.wgt
+.DS_Store
